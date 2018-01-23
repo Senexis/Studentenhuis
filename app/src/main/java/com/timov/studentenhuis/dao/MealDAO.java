@@ -20,19 +20,10 @@ import java.util.Iterator;
 import java.util.List;
 
 public class MealDAO {
-    private String[] columns = {};
     private Context context;
 
     public MealDAO(Context context) {
         this.context = context;
-    }
-
-    public void open() {
-
-    }
-
-    public void close() {
-
     }
 
     public long create(Meal meal) {

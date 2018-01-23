@@ -79,7 +79,6 @@ public class MainActivity extends ListActivity {
                                     startActivityForResult(it, REQUEST_LOGIN);
                                 } else {
                                     mealDAO = new MealDAO(getBaseContext());
-                                    mealDAO.open();
                                     meals = mealDAO.readAll();
 
                                     mealAdapter = new MealAdapter(getBaseContext(), meals);
@@ -122,21 +121,14 @@ public class MainActivity extends ListActivity {
                     meal = (Meal) data.getExtras().getSerializable("meal");
 
                     if (!meal.getName().equals("")) {
-                        mealDAO.open();
                         mealDAO.create(meal);
-
                         meals.add(meal);
-
                         mealAdapter.notifyDataSetChanged();
                     }
                 } else if (requestCode == REQUEST_EDIT) {
                     meal = (Meal) data.getExtras().getSerializable("meal");
-
-                    mealDAO.open();
                     mealDAO.update(meal);
-
                     meals.set(position, meal);
-
                     mealAdapter.notifyDataSetChanged();
                 } else if (requestCode == REQUEST_LOGIN) {
                     onBoot();
@@ -155,7 +147,6 @@ public class MainActivity extends ListActivity {
         } catch (Exception e) {
             trace("Error: " + e.getMessage());
         }
-
     }
 
     public void toast(String msg) {

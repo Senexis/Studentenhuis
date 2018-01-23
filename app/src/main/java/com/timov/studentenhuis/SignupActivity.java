@@ -21,7 +21,6 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class SignupActivity extends AppCompatActivity {
-    private static final String TAG = "SignupActivity";
     private static final int REQUEST_LOGIN = 0;
 
     @Bind(R.id.input_name) EditText _nameText;
