@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/im_meal_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_meal_cook"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im_meal_image"
+        android:text="Kok" />
+
+    <EditText
+        android:id="@+id/et_meal_cook"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_meal_cook"
+        android:inputType="number"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_meal_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_meal_cook"
+        android:text="Maaltijd naam" />
+
+    <EditText
+        android:id="@+id/et_meal_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_meal_name"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_meal_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_meal_name"
+        android:text="Beschrijving" />
+
+    <EditText
+        android:id="@+id/et_meal_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_meal_description"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_meal_max_participants"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_meal_description"
+        android:text="Maximaal aantal deelnemers" />
+
+    <EditText
+        android:id="@+id/et_meal_max_participants"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_meal_max_participants"
+        android:inputType="number"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_meal_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_meal_max_participants"
+        android:text="Kosten" />
+
+    <EditText
+        android:id="@+id/et_meal_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_meal_price"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_meal_start_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_meal_price"
+        android:text="Datum" />
+
+    <EditText
+        android:id="@+id/et_meal_start_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_meal_start_date"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_meal_start_date"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:onClick="btnSave_click"
+            android:text="Opslaan" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:onClick="btnCancel_click"
+            android:text="Annuleren" />
+
+    </LinearLayout>
+
+</RelativeLayout>
