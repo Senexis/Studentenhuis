@@ -1,2 +1,2 @@
-## Studentenhuis App
-Door Timo Viveen, studentnummer 2128321. Bijbehorende API is te vinden op [https://github.com/Arcea/Studentenhuis](https://github.com/Arcea/Studentenhuis).
+# "Studentenhuis" _(Student Dorms)_ Android App
+Accompanying API is available at https://github.com/Senexis/Studentenhuis-App.
