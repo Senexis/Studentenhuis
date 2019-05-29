@@ -1,0 +1,40 @@
+{
+  "name": "studentenhuis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm install && nodemon server.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arcea/Studentenhuis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arcea/Studentenhuis/issues"
+  },
+  "homepage": "https://github.com/Arcea/Studentenhuis#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "crypto": "^1.0.1",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "nodemon": "^1.14.11",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0",
+    "node-mysql": "^0.4.2",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "mocha": "^4.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "mocha": "^4.1.0"
+  }
+}

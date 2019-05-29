@@ -1,2 +1,2 @@
-# "Studentenhuis" Android App
-Accompanying API is available at https://github.com/Senexis/Studentenhuis-API.
+# "Studentenhuis" Project
+A simple meal management system API with an accompanying Android app.
